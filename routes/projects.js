@@ -40,6 +40,17 @@ router.get('/:id', (req, res) => {
     });
 });
 
+router.get('/:id/actions', (req, res) => {
+  const id = req.params.id;
+  db.get(id)
+    .then(response => {
+      res.json(response.actions);
+    })
+    .catch(err => {
+      res.status(500).json({ message: 'Project not found' });
+    });
+});
+
 // Put
 router.put('/:id', function(req, res) {
   const id = req.params.id;
