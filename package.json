@@ -1,0 +1,20 @@
+{
+  "name": "sprint-challenge-node-express",
+  "version": "1.0.0",
+  "description": "Sprint challenge for Lambda School",
+  "main": "server.js",
+  "repository": "https://github.com/cjmarsh725/Sprint-Challenge-Node-Express.git",
+  "author": "Chris Marsh",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "knex": "^0.14.6",
+    "sqlite3": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
